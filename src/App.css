@@ -20,6 +20,13 @@
   margin-right: 3rem;
   text-decoration: none;
 }
+.carousel-image {
+  height: 300px !important;
+  width: 500px !important;
+}
+.title-green {
+  color: #7ab259;
+}
 .text-nav:hover {
   border-bottom: 5px solid #7ab259;
 }

@@ -6,8 +6,8 @@ import ClientsLogo from './CLientsLogo/ClientsLogo';
 
 const Header = () => {
     return (
-       <div>
-            <div className="header-container">
+       <div classnames="pb-5">
+            <div className="header-container mb-5">
             <NavHeader/>
             <MainHeader/>
         </div>

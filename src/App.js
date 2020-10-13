@@ -8,6 +8,9 @@ import {
 } from "react-router-dom";
 import NoMatch from './pages/NoMatch';
 import Home from './pages/Home';
+import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 export const UserContext = createContext();
 
 function App() {
@@ -16,6 +19,12 @@ function App() {
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
         <Switch>
+        <Route path="/login">
+           <Login/>
+          </Route>
+          <PrivateRoute path="/dashboard">
+           <Dashboard/>
+          </PrivateRoute>
         <Route path="/home">
            <Home/>
           </Route>

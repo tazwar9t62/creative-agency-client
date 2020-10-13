@@ -6,6 +6,21 @@
   height: 40vmin;
   pointer-events: none;
 }
+.text-nav {
+  color: #474747;
+  font-size: 1rem;
+  margin-right: 3rem;
+  text-decoration: none;
+}
+.text-nav:hover {
+  border-bottom: 5px solid #7ab259;
+}
+.btn-brand {
+  background-color: #111430 !important;
+  color: white;
+  width: 134px;
+  cursor: pointer;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

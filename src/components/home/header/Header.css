@@ -1,0 +1,8 @@
+.header-container {
+  height: 800px;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 66%, 0 83%);
+  background-color: #fbd062;
+  background-size: cover;
+  background-position: center;
+}

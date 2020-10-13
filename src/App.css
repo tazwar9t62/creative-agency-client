@@ -6,6 +6,14 @@
   height: 40vmin;
   pointer-events: none;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+.width-logo {
+  width: 120px;
+  height: 40px !important;
+}
 .text-nav {
   color: #474747;
   font-size: 1rem;
@@ -15,6 +23,7 @@
 .text-nav:hover {
   border-bottom: 5px solid #7ab259;
 }
+
 .btn-brand {
   background-color: #111430 !important;
   color: white;

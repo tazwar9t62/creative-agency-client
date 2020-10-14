@@ -24,7 +24,10 @@ const Order = () => {
     return (
         <section className=" container-fluid">
         <div className="row">         
-          <div className="col-md-12" style={{backgroundColor:"#f4f7fc"}}>           
+          <div className="col-md-12 dashboard-background" > 
+          <div className="pt-5 pl-3">
+                <h2>Place an Order</h2>
+            </div>          
             <div className="col-md-10  mt-5">
               <form onSubmit={handleSubmit(onSubmit)}>
                 <input
@@ -58,7 +61,7 @@ const Order = () => {
                   ref={register}
                   defaultValue={singleService.description}
                   
-                  cols="30"
+                  cols="20"
                   rows="10"
                 ></textarea>
                 <br />

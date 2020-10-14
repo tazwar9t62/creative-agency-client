@@ -43,17 +43,17 @@ const Sidebar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/admin/serviceList" className="text-sidebar">
+                        <Link to="/dashboard/admin/serviceList" className="text-sidebar">
                             <FontAwesomeIcon icon={faHdd} /> <span>Service List A</span>
                         </Link>
                     </li>                  
                     <li>
-                        <Link to="/admin/addService" className="text-sidebar" >
+                        <Link to="/dashboard/admin/addService" className="text-sidebar" >
                             <FontAwesomeIcon icon={faPlus} /> <span>Add Service</span>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/admin/addAdmin" className="text-sidebar" >
+                        <Link to="/dashboard/admin/addAdmin" className="text-sidebar" >
                             <FontAwesomeIcon icon={faUserPlus} /> <span>Add Admin</span>
                         </Link>
                     </li>

@@ -11,6 +11,8 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+
+import Review from './components/Dashboard/Review/Review';
 export const UserContext = createContext();
 
 function App() {
@@ -23,9 +25,12 @@ function App() {
         <Route path="/login">
            <Login/>
           </Route>
-          <PrivateRoute path="/dashboard">
+          <Route path="/dashboard/review">
+           <Review/>
+          </Route>
+          <Route path="/dashboard">
            <Dashboard/>
-          </PrivateRoute>
+          </Route>
         <Route path="/home">
            <Home/>
           </Route>

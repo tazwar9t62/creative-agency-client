@@ -46,10 +46,7 @@ const Sidebar = () => {
                         <Link to="/admin/serviceList" className="text-sidebar">
                             <FontAwesomeIcon icon={faHdd} /> <span>Service List A</span>
                         </Link>
-                    </li>
-                    <li>
-                        
-                    </li>
+                    </li>                  
                     <li>
                         <Link to="/admin/addService" className="text-sidebar" >
                             <FontAwesomeIcon icon={faPlus} /> <span>Add Service</span>

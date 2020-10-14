@@ -54,7 +54,7 @@ const Sidebar = () => {
                     </li>
                     <li>
                         <Link to="/dashboard/admin/addAdmin" className="text-sidebar" >
-                            <FontAwesomeIcon icon={faUserPlus} /> <span>Add Admin</span>
+                            <FontAwesomeIcon icon={faUserPlus} /> <span>Make Admin</span>
                         </Link>
                     </li>
                 {/* {isDoctor && <div>

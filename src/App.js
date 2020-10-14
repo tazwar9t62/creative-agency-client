@@ -13,6 +13,7 @@ import Dashboard from './pages/Dashboard';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 import Review from './components/Dashboard/Review/Review';
+import AddService from './components/Dashboard/AddService/AddService';
 export const UserContext = createContext();
 
 function App() {
@@ -21,8 +22,12 @@ function App() {
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser],[singleService,setSingleService]}>
       <Router>
+      
         <Switch>
-        <Route path="/login">
+        <Route path="/dashboard/admin/addService">
+           <AddService/>
+          </Route>
+          <Route path="/login">
            <Login/>
           </Route>
           <Route path="/dashboard/review">

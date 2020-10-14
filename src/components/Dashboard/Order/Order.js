@@ -28,7 +28,7 @@ const Order = () => {
           <div className="pt-5 pl-3">
                 <h2>Place an Order</h2>
             </div>          
-            <div className="col-md-10  mt-5">
+            <div className="col-md-12  mt-5">
               <form onSubmit={handleSubmit(onSubmit)}>
                 <input
                   name="name"

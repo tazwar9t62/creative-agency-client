@@ -9,7 +9,7 @@ const Services = () => {
         .then((data) => setServices(data));
     }, []);
     return (
-        <section style={{height:"500px"}} className="service-container mt-5">
+        <section  className="service-container py-5 my-5">
         <div className="text-center">
             <h2> <span style={{color:"#2D2D2D"}}>Provide awesome </span> <span className="title-green">services</span></h2>
         </div>

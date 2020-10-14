@@ -9,11 +9,11 @@ const Works = () => {
         <img className="carousel-image img-fluid"  src="https://picsum.photos/800/303/?random" alt="4" />  ,
         <img className="carousel-image img-fluid" src="https://picsum.photos/800/304/?random" alt="5" />   ];
     return (
-        <section style={{height:"500px" , backgroundColor:"#111430"}} className="works-container">
-            <div style={{marginTop: "100px !important"}} className="text-center mb-5">
+        <section style={{ backgroundColor:"#111430"}} className="works-container">
+            <div className="text-center pt-5 my-5">
             <h2> <span style={{color:"white"}}>Here are some of</span> <span className="title-green">our works</span></h2>
             </div>
-            <div>
+            <div className="pb-5">
             <Carousel slides={slides} autoplay={true} interval={5000}/>
             </div>
        

@@ -6,7 +6,7 @@ const NavHeader = () => {
     return (
         <div>
             <Navbar bg="transparent" expand="lg">
-            <Navbar.Brand href="#home"><img className="img-fluid w-25 ml-5" src="https://i.ibb.co/6DdQDrX/logo.png" alt="logo" /></Navbar.Brand>
+            <Navbar.Brand href="/home"><img className="img-fluid w-25 ml-5" src="https://i.ibb.co/6DdQDrX/logo.png" alt="logo" /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">

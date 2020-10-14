@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <section style={{height:"600px" , backgroundColor:"#FBD062"}} className="">
-            <div className="row">
-                <div className="col-md-6 my-5 py-5">
+        <section style={{backgroundColor:"#FBD062"}} className="">
+            <div className="row d-flex justify-content-center">
+                <div className="col-md-6 my-5 pt-5">
                 <div className="section-header ml-5 pl-5 mb-5">
                     
                     <h1 style={{color:"#2D2D2D"}}>Let us handle your <br/>project, professionally</h1>
@@ -12,7 +12,7 @@ const Footer = () => {
                </div>
                 </div>
             
-            <div id="contact" className="col-md-6 my-5 py-5 pr-5 contact-form ">
+            <div id="contact" className="col-md-6 my-5 p-5 contact-form ">
            <div className="container">
                
                <div className=" m-auto">

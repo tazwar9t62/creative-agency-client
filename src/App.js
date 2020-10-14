@@ -15,6 +15,8 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Review from './components/Dashboard/Review/Review';
 import AddService from './components/Dashboard/AddService/AddService';
 import AddAdmin from './components/Dashboard/AddAddmin/AddAdmin';
+import Order from './components/Dashboard/Order/Order';
+import AllOrders from './components/Dashboard/AllOrders/AllOrders';
 export const UserContext = createContext();
 
 function App() {
@@ -25,7 +27,13 @@ function App() {
       <Router>
       
         <Switch>
-        <Route path="/dashboard/admin/addService">
+        <Route path="/dashboard/addOrder">
+           <Order/>
+          </Route>
+          <Route path="/dashboard/admin/allOrders">
+           <AllOrders/>
+          </Route>
+          <Route path="/dashboard/admin/addService">
            <AddService/>
           </Route>
           <Route path="/dashboard/admin/addAdmin">

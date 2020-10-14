@@ -18,13 +18,18 @@ const Order = () => {
     })
       .then((res) => res.json())
       .then((result) => {
-        console.log(result);
+        if(result){
+            alert("Thank you! Order placed Successfully!")
+        }
       });
   };
     return (
         <section className=" container-fluid">
-        <div className="row">         
-          <div className="col-md-12 dashboard-background" > 
+        <div className="row"> 
+        <div className="col-md-3">
+          <Sidebar />
+        </div>        
+          <div className="col-md-9 dashboard-background" > 
           <div className="pt-5 pl-3">
                 <h2>Place an Order</h2>
             </div>          

@@ -1,5 +1,5 @@
 import React from 'react';
-import Order from '../components/Dashboard/Order/Order';
+
 import Sidebar from '../components/Dashboard/Sidebar/Sidebar';
 
 const Dashboard = () => {
@@ -9,7 +9,7 @@ const Dashboard = () => {
            <Sidebar/>
         </div>
         <div className="col-md-9">
-            <Order/>
+           
         </div>
        </div>
     );

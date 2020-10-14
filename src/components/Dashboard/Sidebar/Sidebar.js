@@ -28,7 +28,7 @@ const Sidebar = () => {
             </div>
             <ul className="list-unstyled">
                 <li>
-                    <Link to="/dashboard/order" className="text-sidebar">
+                    <Link to="/dashboard/addOrder" className="text-sidebar">
                         <FontAwesomeIcon icon={faShoppingCart} /> <span>Order</span>
                     </Link>
                 </li>
@@ -43,8 +43,8 @@ const Sidebar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/dashboard/admin/serviceList" className="text-sidebar">
-                            <FontAwesomeIcon icon={faHdd} /> <span>Service List A</span>
+                        <Link to="/dashboard/admin/allOrders" className="text-sidebar">
+                            <FontAwesomeIcon icon={faHdd} /> <span>All Orders</span>
                         </Link>
                     </li>                  
                     <li>

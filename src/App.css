@@ -27,6 +27,9 @@
 .title-green {
   color: #7ab259;
 }
+.text-sidebar {
+  color: #111111;
+}
 .text-nav:hover {
   border-bottom: 5px solid #7ab259;
 }
@@ -36,6 +39,10 @@
   color: white;
   width: 134px;
   cursor: pointer;
+}
+.btn-brand:hover {
+  opacity: 0.9;
+  border: 2px solid #7ab259;
 }
 
 @media (prefers-reduced-motion: no-preference) {

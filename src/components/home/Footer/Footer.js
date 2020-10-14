@@ -12,7 +12,7 @@ const Footer = () => {
                </div>
                 </div>
             
-            <div className="col-md-6 my-5 py-5 pr-5 contact-form ">
+            <div id="contact" className="col-md-6 my-5 py-5 pr-5 contact-form ">
            <div className="container">
                
                <div className=" m-auto">

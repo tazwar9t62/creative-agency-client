@@ -28,30 +28,30 @@ function App() {
       <Router>
       
         <Switch>
-        <Route path="/dashboard/addOrder">
+        <PrivateRoute path="/dashboard/addOrder">
            <Order/>
-          </Route>
-          <Route path="/dashboard/serviceList">
+          </PrivateRoute>
+          <PrivateRoute path="/dashboard/serviceList">
            <OrderedServices/>
-          </Route>
-          <Route path="/dashboard/admin/allOrders">
+          </PrivateRoute>
+          <PrivateRoute path="/dashboard/admin/allOrders">
            <AllOrders/>
-          </Route>
-          <Route path="/dashboard/admin/addService">
+          </PrivateRoute>
+          <PrivateRoute path="/dashboard/admin/addService">
            <AddService/>
-          </Route>
-          <Route path="/dashboard/admin/addAdmin">
+          </PrivateRoute>
+          <PrivateRoute path="/dashboard/admin/addAdmin">
            <AddAdmin/>
-          </Route>
+          </PrivateRoute>
           <Route path="/login">
            <Login/>
           </Route>
           <Route path="/dashboard/review">
            <Review/>
           </Route>
-          <Route path="/dashboard">
+          <PrivateRoute path="/dashboard">
            <Dashboard/>
-          </Route>
+          </PrivateRoute>
         <Route path="/home">
            <Home/>
           </Route>

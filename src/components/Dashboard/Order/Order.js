@@ -23,6 +23,7 @@ const Order = () => {
         }
       });
   };
+  console.log(singleService, loggedInUser);
     return (
         <section className=" container-fluid">
         <div className="row"> 

@@ -9,7 +9,7 @@ const Works = () => {
         <img className="carousel-image img-fluid"  src="https://i.ibb.co/Jp8JNjQ/carousel-4.png" alt="carousel-4" />  ,
         <img className="carousel-image img-fluid" src="https://i.ibb.co/hMH7VVM/carousel-5.png" alt="carousel-5"  />   ];
     return (
-        <section style={{ backgroundColor:"#111430"}} className="works-container">
+        <section id="works" style={{ backgroundColor:"#111430"}} className="works-container">
             <div className="text-center pt-5 my-5">
             <h2> <span style={{color:"white"}}>Here are some of</span> <span className="title-green">our works</span></h2>
             </div>

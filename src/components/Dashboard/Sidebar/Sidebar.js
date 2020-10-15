@@ -51,7 +51,7 @@ const Sidebar = () => {
                 
             <li>
                 <Link to="/dashboard/addOrder" className="text-sidebar">
-                    <FontAwesomeIcon icon={faShoppingCart} /> <span>Order</span>
+                    <FontAwesomeIcon icon={faShoppingCart} /> <span>Add Order</span>
                 </Link>
             </li>
             <li>

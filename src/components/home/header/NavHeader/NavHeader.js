@@ -11,9 +11,9 @@ const NavHeader = () => {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
                 <Nav.Link className="text-nav active"  href="#home">Home</Nav.Link>
-                <Nav.Link className="text-nav" href="#link">Our Portfolio</Nav.Link>
+                <Nav.Link className="text-nav" href="/#works">Our Portfolio</Nav.Link>
                 <Nav.Link className="text-nav" href="#link">Our Team</Nav.Link>
-                <Nav.Link className="text-nav" href="#link">Contact Us</Nav.Link>
+                <Nav.Link className="text-nav" href="/#contact">Contact Us</Nav.Link>
                 <Nav.Link  href="/login"> <button className="btn btn-brand text-white mr-5">Login</button> </Nav.Link>
                 </Nav>
     

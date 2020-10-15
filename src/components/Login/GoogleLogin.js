@@ -24,15 +24,29 @@ const GoogleLogin = () => {
           .auth()
           .signInWithPopup(googleProvider)
           .then(function (result) {
-            const { displayName, email } = result.user;
-            const signInUser = { name: displayName, email };
+            const { displayName, email , photoURL} = result.user;
+            const signInUser = { name: displayName, email , photoURL };
             setLoggedInUser(signInUser);
             history.replace(from);
+            setIdToken();
           })
           .catch(function (error) {
             var errorCode = error.code;
             var errorMessage = error.message;
             console.log(errorCode, errorMessage);
+          });
+      };
+      const setIdToken = () => {
+        firebase
+          .auth()
+          .currentUser.getIdToken(/* forceRefresh */ true)
+          .then(function (idToken) {
+            // Send token to your backend via HTTPS
+            // ...
+            sessionStorage.setItem("token", idToken);
+          })
+          .catch(function (error) {
+            // Handle error
           });
       };
     return (

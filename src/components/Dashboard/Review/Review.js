@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useForm } from "react-hook-form";
+import { UserContext } from '../../../App';
 import Sidebar from '../Sidebar/Sidebar';
 
 const Review = () => {
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  console.log(loggedInUser);
     const { register, handleSubmit,  errors } = useForm();
   const onSubmit = (data) => {
     fetch("http://localhost:5000/addReview", {
@@ -12,13 +15,15 @@ const Review = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         if(data){
             alert("Added Review Successfully")
         }
         
+        
       });
   };
+  
     return (
         <section className=" container-fluid">
             
@@ -46,6 +51,13 @@ const Review = () => {
                 className="control"
                 ref={register({ required: true })}
               />
+              <input
+                  style={{ display: "none" }}
+                  name="img"
+                  className="control"
+                  defaultValue={loggedInUser.photoURL}
+                  ref={register}
+                />
              
               {errors.name && <span>This field is required</span>}
               <br />
@@ -58,6 +70,7 @@ const Review = () => {
                 cols="30"
                 rows="10"
               ></textarea>
+              
               <br />
               <button className="btn btn-brand text-white" type="submit">
                 Submit

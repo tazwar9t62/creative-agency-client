@@ -19,6 +19,7 @@ const AllOrders = () => {
                 <h2>All Orders</h2>
             </div>          
             <div className="col-md-12  mt-5">
+            {orders.length === 0 && <img style={{width: '100%'}} src="https://icon-library.com/images/loading-icon-animated-gif/loading-icon-animated-gif-19.jpg" alt=""/> }
             <table className="table">
         <thead className="thead-dark">
           <tr>
@@ -30,6 +31,7 @@ const AllOrders = () => {
           </tr>
         </thead>
         <tbody>
+          
           {orders.map((order) => (
             <tr>
               <td>{order.name}</td>

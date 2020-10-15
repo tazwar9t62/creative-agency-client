@@ -13,7 +13,9 @@ const Services = () => {
         <div className="text-center">
             <h2> <span style={{color:"#2D2D2D"}}>Provide awesome </span> <span className="title-green">services</span></h2>
         </div>
+        {services.length === 0 && <img style={{width: '100%'}} src="https://icon-library.com/images/loading-icon-animated-gif/loading-icon-animated-gif-19.jpg" alt=""/> }
         <div className="d-flex justify-content-center">
+        
         <div className="row w-75 mt-5 pt-5">
          {services.map(service => <ServiceDetails service={service} key={service._id}></ServiceDetails>)} 
         </div>

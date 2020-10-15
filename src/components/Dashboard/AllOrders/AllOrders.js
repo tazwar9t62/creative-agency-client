@@ -4,7 +4,7 @@ import Sidebar from '../Sidebar/Sidebar';
 const AllOrders = () => {
     const [orders, setOrders] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/allOrders")
+    fetch("https://evening-thicket-50517.herokuapp.com/allOrders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, []);

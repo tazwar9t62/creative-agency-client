@@ -11,7 +11,7 @@ const Order = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     const dataOrder = { ...data, ...singleService };
-    fetch("http://localhost:5000/addOrder", {
+    fetch("https://evening-thicket-50517.herokuapp.com/addOrder", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(dataOrder),

@@ -7,6 +7,8 @@ import "firebase/auth";
 import "./GoogleLogin.css";
 import { Link, useHistory, useLocation } from "react-router-dom";
 
+
+
 const GoogleLogin = () => {
     if (firebase.apps.length === 0) {
         firebase.initializeApp(firebaseConfig);
@@ -25,7 +27,8 @@ const GoogleLogin = () => {
           .signInWithPopup(googleProvider)
           .then(function (result) {
             const { displayName, email , photoURL} = result.user;
-            const signInUser = { name: displayName, email , photoURL };
+           
+            const signInUser = { isSignedIn: true, name: displayName, email , photoURL };
             setLoggedInUser(signInUser);
             history.replace(from);
             setIdToken();
@@ -49,6 +52,7 @@ const GoogleLogin = () => {
             // Handle error
           });
       };
+      
     return (
         <>
       <Link to="/">

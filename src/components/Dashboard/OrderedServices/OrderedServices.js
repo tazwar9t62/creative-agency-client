@@ -9,7 +9,7 @@ const OrderedServices = () => {
     const [orderedServices, setOrderedServices] = useState([]);
   useEffect(() => {
     fetch(
-      "http://localhost:5000/orderedServices?email=" +
+      "https://evening-thicket-50517.herokuapp.com/orderedServices?email=" +
         loggedInUser.email
     )
       .then((res) => res.json())

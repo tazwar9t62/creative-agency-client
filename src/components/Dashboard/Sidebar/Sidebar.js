@@ -10,8 +10,13 @@ const Sidebar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [isAdmin, setIsAdmin] = useState(false);
 
+    const logOut = ()=>
+    {
+        sessionStorage.removeItem("token");
+    }
+
     useEffect(() => {
-        fetch('http://localhost:5000/isAdmin', {
+        fetch('https://evening-thicket-50517.herokuapp.com/isAdmin', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({ email: loggedInUser.email })
@@ -19,6 +24,8 @@ const Sidebar = () => {
             .then(res => res.json())
             .then(data => setIsAdmin(data));
     }, [])
+
+     
     return (
         <div className="sidebar d-flex flex-column   py-5 px-4" style={{ height: "100vh" }}>
             <div>
@@ -59,7 +66,7 @@ const Sidebar = () => {
                     <FontAwesomeIcon icon={faHdd} /> <span>Service List</span>
                 </Link>
             </li>
-            <li>
+            <li >
                     <Link to="/dashboard/review" className="text-sidebar">
                         <FontAwesomeIcon icon={faCommentDots} /> <span>Review</span>
                     </Link>
@@ -68,7 +75,7 @@ const Sidebar = () => {
             
         </ul>}
             
-            <div>
+            <div onClick={()=>logOut()}>
                 <Link to="/" className="text-sidebar"><FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span></Link>
             </div>
         </div>

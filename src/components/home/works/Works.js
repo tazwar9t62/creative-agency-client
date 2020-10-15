@@ -6,8 +6,8 @@ const Works = () => {
         <img className="carousel-image img-fluid"  src="https://i.ibb.co/ZK0384s/carousel-1.png" alt="carousel-1" />,
         <img className="carousel-image img-fluid"  src="https://i.ibb.co/SX4YryP/carousel-2.png" alt="carousel-2" />  ,
         <img className="carousel-image img-fluid"   src="https://i.ibb.co/mqkym4P/carousel-3.png" alt="carousel-3" />  ,
-        <img className="carousel-image img-fluid"  src="https://picsum.photos/800/303/?random" alt="4" />  ,
-        <img className="carousel-image img-fluid" src="https://picsum.photos/800/304/?random" alt="5" />   ];
+        <img className="carousel-image img-fluid"  src="https://i.ibb.co/Jp8JNjQ/carousel-4.png" alt="carousel-4" />  ,
+        <img className="carousel-image img-fluid" src="https://i.ibb.co/hMH7VVM/carousel-5.png" alt="carousel-5"  />   ];
     return (
         <section style={{ backgroundColor:"#111430"}} className="works-container">
             <div className="text-center pt-5 my-5">

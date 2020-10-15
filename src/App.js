@@ -17,6 +17,7 @@ import AddService from './components/Dashboard/AddService/AddService';
 import AddAdmin from './components/Dashboard/AddAddmin/AddAdmin';
 import Order from './components/Dashboard/Order/Order';
 import AllOrders from './components/Dashboard/AllOrders/AllOrders';
+import OrderedServices from './components/Dashboard/OrderedServices/OrderedServices';
 export const UserContext = createContext();
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
         <Switch>
         <Route path="/dashboard/addOrder">
            <Order/>
+          </Route>
+          <Route path="/dashboard/serviceList">
+           <OrderedServices/>
           </Route>
           <Route path="/dashboard/admin/allOrders">
            <AllOrders/>

@@ -11,7 +11,7 @@ const Sidebar = () => {
     const [isAdmin, setIsAdmin] = useState(false);
 
     useEffect(() => {
-        fetch('https://salty-plateau-71286.herokuapp.com/isDoctor', {
+        fetch('http://localhost:5000/isAdmin', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({ email: loggedInUser.email })
@@ -26,58 +26,48 @@ const Sidebar = () => {
                 <img className="img-fluid w-25 mb-4" src="https://i.ibb.co/6DdQDrX/logo.png" alt=""/>
                 </Link>
             </div>
+            {isAdmin? 
             <ul className="list-unstyled">
+                
+            
                 <li>
-                    <Link to="/dashboard/addOrder" className="text-sidebar">
-                        <FontAwesomeIcon icon={faShoppingCart} /> <span>Order</span>
+                    <Link to="/dashboard/admin/allOrders" className="text-sidebar">
+                        <FontAwesomeIcon icon={faHdd} /> <span>All Orders</span>
+                    </Link>
+                </li>                  
+                <li>
+                    <Link to="/dashboard/admin/addService" className="text-sidebar" >
+                        <FontAwesomeIcon icon={faPlus} /> <span>Add Service</span>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/dashboard/serviceList" className="text-sidebar">
-                        <FontAwesomeIcon icon={faHdd} /> <span>Service List</span>
+                    <Link to="/dashboard/admin/addAdmin" className="text-sidebar" >
+                        <FontAwesomeIcon icon={faUserPlus} /> <span>Make Admin</span>
                     </Link>
                 </li>
-                <li>
-                        <Link to="/dashboard/review" className="text-sidebar">
-                            <FontAwesomeIcon icon={faCommentDots} /> <span>Review</span>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/dashboard/admin/allOrders" className="text-sidebar">
-                            <FontAwesomeIcon icon={faHdd} /> <span>All Orders</span>
-                        </Link>
-                    </li>                  
-                    <li>
-                        <Link to="/dashboard/admin/addService" className="text-sidebar" >
-                            <FontAwesomeIcon icon={faPlus} /> <span>Add Service</span>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/dashboard/admin/addAdmin" className="text-sidebar" >
-                            <FontAwesomeIcon icon={faUserPlus} /> <span>Make Admin</span>
-                        </Link>
-                    </li>
-                {/* {isDoctor && <div>
-                     <li>
-                        <Link to="/admin/serviceList" className="text-sidebar">
-                            <FontAwesomeIcon icon={faHdd} /> <span>Service List A</span>
-                        </Link>
-                    </li>
-                    <li>
-                        
-                    </li>
-                    <li>
-                        <Link to="/admin/addService" className="text-sidebar" >
-                            <FontAwesomeIcon icon={faPlus} /> <span>Add Service</span>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/admin/addAdmin" className="text-sidebar" >
-                            <FontAwesomeIcon icon={faUserPlus} /> <span>Add Admin</span>
-                        </Link>
-                    </li>
-                </div>} */}
-            </ul>
+            
+        </ul>
+            : <ul className="list-unstyled">
+                
+            <li>
+                <Link to="/dashboard/addOrder" className="text-sidebar">
+                    <FontAwesomeIcon icon={faShoppingCart} /> <span>Order</span>
+                </Link>
+            </li>
+            <li>
+                <Link to="/dashboard/serviceList" className="text-sidebar">
+                    <FontAwesomeIcon icon={faHdd} /> <span>Service List</span>
+                </Link>
+            </li>
+            <li>
+                    <Link to="/dashboard/review" className="text-sidebar">
+                        <FontAwesomeIcon icon={faCommentDots} /> <span>Review</span>
+                    </Link>
+                </li>
+               
+            
+        </ul>}
+            
             <div>
                 <Link to="/" className="text-sidebar"><FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span></Link>
             </div>

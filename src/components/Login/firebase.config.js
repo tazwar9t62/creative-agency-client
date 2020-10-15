@@ -1,10 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyBihpUgxFqffqoyndKtnzQZiQOSV20zVWY",
-    authDomain: "volunteer-network-f9032.firebaseapp.com",
-    databaseURL: "https://volunteer-network-f9032.firebaseio.com",
-    projectId: "volunteer-network-f9032",
-    storageBucket: "volunteer-network-f9032.appspot.com",
-    messagingSenderId: "841763163190",
-    appId: "1:841763163190:web:d19309ae9c56c0b5db5c97",
+  apiKey: "AIzaSyCHrV7VxYVGKpIJ52uHl6m16Rp1ssfSib8",
+  authDomain: "creative-agency-74e59.firebaseapp.com",
+  databaseURL: "https://creative-agency-74e59.firebaseio.com",
+  projectId: "creative-agency-74e59",
+  storageBucket: "creative-agency-74e59.appspot.com",
+  messagingSenderId: "792040060988",
+  appId: "1:792040060988:web:7ee8face77d6e7e9146b39"
   };
   export default firebaseConfig;
